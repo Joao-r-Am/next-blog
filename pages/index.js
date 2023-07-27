@@ -21,14 +21,16 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Olá! Me chamo João R. Amorim, estudo programação e computação desde os 15 anos, ja atuei como desenvolvedor fullstack Node.js.
-          Sou formado em analise e desenvolvimento de sistemas pela Universidade Tuiuti do Paraná.
-          Sou instusiasta tambem nas areas de projetos open-source, InfoSec, e desenvolvimento de jogos!
+        <p>
+          Olá! Me chamo João Ricardo de Amorim, estudo programação e computação desde os 15 anos,
+          possuo formação em análise e desenvolvimento de sistemas pela Universidade Tuiuti do Paraná.
+          Já atuei como desenvolvedor fullstack Node.js. Sou um enstusiasta nas áreas de projetos
+          open-source, InfoSec, e desenvolvimento de jogos.
         </p>
 
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Projetos</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
